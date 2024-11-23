@@ -6,9 +6,10 @@ from users.urls import profile_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')), 
-    path('', include('home.urls')),
+    # path('', include('home.urls')),
+    path('', include('rtc.urls')),
     path('profile/', include('users.urls')),
-    path('@<username>/', profile_view, name="profile"),
+    # path('@<username>/', profile_view, name="profile"),
 ] 
 
 if settings.DEBUG:
