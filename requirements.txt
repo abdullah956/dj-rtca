@@ -3,4 +3,4 @@ pillow
 django-cleanup
 django-allauth
 django-htmx
-pip install -U 'channels[daphne]'
+channels[daphne]
